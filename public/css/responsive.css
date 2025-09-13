@@ -1,0 +1,603 @@
+@media(max-width: 1700px){
+    header {
+        padding: 30px 165px 30px 165px;
+    }
+    .home {
+        padding-left: 165px;
+        padding-right: 165px;
+    }
+    .home-contenet {
+        padding-right: 80px;
+    }
+    .logo {
+        font-size: 46px;
+        line-height: 56px;
+    }
+    .text-50 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .text-40 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    nav a {
+        font-size: 26px;
+        line-height: 36px;
+        margin-left: 55px;
+    }
+    .heading-112 {
+        font-size: 100px;
+        line-height: 112px;
+    }
+    .home-contenet h3 {
+        font-size: 63px;
+        line-height: 73px;
+    }
+    .typing-text span::after {
+        max-height: 73px;
+    }
+    .btn {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+@media(max-width: 1600px){
+    header {
+        padding: 30px 150px 30px 150px;
+    }
+    .home {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .home-contenet {
+        padding-right: 70px;
+    }
+    .logo {
+        font-size: 44px;
+        line-height: 54px;
+    }
+    .text-50 {
+        font-size: 46px;
+        line-height: 56px;
+    }
+    .text-40 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .heading-112 {
+        font-size: 90px;
+        line-height: 100px;
+    }
+    .home-contenet h3 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .typing-text span::after {
+        max-height: 70px;
+    }
+    .btn {
+        font-size: 46px;
+        line-height: 56px;
+    }
+    .social-icons a {
+        width: 60px;
+        height: 60px;
+    }
+    .education {
+        padding: 90px 15px;
+    }
+    .timeline-dot {
+        left: calc(50% - 9px);
+    }
+    nav a {
+        margin-left: 45px;
+    }
+}
+@media(max-width: 1500px){
+    header {
+        padding: 30px 140px 30px 140px;
+    }
+    .home {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+    .home-contenet {
+        padding-right: 60px;
+    }
+    .logo {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .text-50 {
+        font-size: 44px;
+        line-height: 54px;
+    }
+    .text-40 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .heading-112 {
+        font-size: 88px;
+        line-height: 98px;
+    }
+    .home-contenet h3 {
+        font-size: 58px;
+        line-height: 68px;
+    }
+    .typing-text span::after {
+        max-height: 68px;
+    }
+    .btn {
+        font-size: 44px;
+        line-height: 54px;
+    }
+}
+@media(max-width: 1400px){
+    header {
+        padding: 30px 100px 30px 100px;
+    }
+    .home {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .home-contenet {
+        padding-right: 50px;
+    }
+    .logo {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .text-50 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .text-40 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .heading-112 {
+        font-size: 86px;
+        line-height: 96px;
+    }
+    .btn {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .education {
+        padding: 80px 15px;
+    }
+    .home-contenet h3 {
+        font-size: 56px;
+        line-height: 66px;
+    }
+    .typing-text span::after {
+        max-height: 66px;
+    }
+    .timeline-content {
+        padding: 20px 15px 20px 15px;
+    }
+}
+@media(max-width: 1300px){
+    header {
+        padding: 25px 60px 25px 60px;
+    }
+    .home {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .logo {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .text-50 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .text-40 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .heading-112 {
+        font-size: 84px;
+        line-height: 94px;
+    }
+    .btn {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .home-contenet {
+        padding-right: 40px;
+    }
+    .home-contenet h3 {
+        font-size: 54px;
+        line-height: 64px;
+    }
+    .typing-text span::after {
+        max-height: 64px;
+    }
+}
+@media(max-width: 1200px){
+    header {
+        padding: 25px 30px 25px 30px;
+    }
+    .home {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
+    }
+    .logo {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .text-50 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .text-40 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .heading-112 {
+        font-size: 82px;
+        line-height: 92px;
+    }
+    .btn {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .home-contenet {
+        padding-right: 30px;
+    }
+    .education {
+        padding: 70px 15px;
+    }
+    .education h2 {
+        margin-bottom: 70px;
+    }
+    .home-contenet h3 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+    .typing-text span::after {
+        max-height: 62px;
+    }
+    .skills-main-container {
+        gap: 25px;
+    }
+}
+@media(max-width: 1024px){
+    header {
+        padding: 20px 15px 20px 15px;
+    }
+    .home {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .logo {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .text-50 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .text-40 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .heading-112 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+    .heading {
+        text-align: left;
+    }
+    .btn {
+        font-size: 36px;
+        line-height: 46px;
+        padding: 10px 40px;
+    }
+    .home-contenet{
+        padding-right: 0px;
+        max-width: 100%;
+        padding-top: 60px;
+    }
+    .home-img  {
+        max-width: 100%;
+    }
+    .home {
+        flex-wrap: wrap-reverse;
+    }
+    .timeline-items::before {
+        left: 5px;
+    }
+    .timeline-dot {
+        left: -3px;
+    }
+    .timeline-item:nth-child(even) {
+        padding-left: 0;
+    }
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+    }
+    .timeline-date {
+        text-align: left;
+        padding-left: 30px;
+    }
+    .c {
+        max-width: 700px;
+    }
+    .education {
+        padding: 60px 15px;
+    }
+    nav a {
+        margin-left: 40px;
+    }
+    .social-icons a {
+        width: 50px;
+        height: 50px;
+        margin: 40px 24px 40px 0;
+    }
+    .education h2 {
+        margin-bottom: 60px;
+    }
+    .home-contenet h3 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .typing-text span::after {
+        max-height: 60px;
+    }
+    .btn-group {
+        gap:20px;
+    }
+}
+@media(max-width:950px){
+    nav a {
+        margin-left: 30px;
+    }
+    .heading-112 {
+        font-size: 78px;
+        line-height: 88px;
+    }
+    .home-contenet h3 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .typing-text span::after {
+        max-height: 58px;
+    }
+    .skills-main-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+@media(max-width: 900px){
+    nav a {
+        margin-left: 20px;
+    }
+    .heading-112 {
+        font-size: 76px;
+        line-height: 86px;
+    }
+    .home-contenet h3 {
+        font-size: 46px;
+        line-height: 56px;
+    }
+    .typing-text span::after {
+        max-height: 56px;
+    }
+}
+@media(max-width:834px){
+    #menu-icon {
+        display: block;
+    }
+    #myLinks {
+        position: absolute;
+        top:104px;
+        width: 100%;
+        background: url(../img/bg.png);
+        left:0px;
+    }
+    nav a {
+        display: block;
+        margin-left: 0px;
+        border: none;
+        padding: 0px 15px 15px 15px;
+    }
+    nav a:nth-last-child(){
+        padding-bottom: 0px;
+    }
+    nav a:hover, nav a.active {
+        color: var(--main-color);
+        border: none;
+        border-radius: 0;
+        background-color: var(--text-color)
+    }
+    #myLinks {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+    .btn {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .heading-112 {
+        font-size: 74px;
+        line-height: 84px;
+    }
+    .home-contenet h3 {
+        font-size: 44px;
+        line-height: 54px;
+    }
+    .typing-text span::after {
+        max-height: 54px;
+    }
+}
+@media(max-width:768px){
+    .heading-112 {
+        font-size: 72px;
+        line-height: 82px;
+    }
+    .btn {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .education {
+        padding: 50px 15px;
+    }
+    .education h2 {
+        margin-bottom: 50px;
+    }
+    .home-contenet h3 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .typing-text span::after {
+        max-height: 52px;
+    }
+    .skill-img {
+        width: 150px;
+        height: 150px;
+    }
+    .btn-group {
+        gap: 15px;
+    }
+    .services-container {
+        gap: 20px;
+    }
+}
+@media(max-width:650px){
+    .heading-112 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .home-contenet h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .typing-text span::after {
+        max-height: 50px;
+    }
+    .footer ul li {
+        padding-bottom: 15px;
+    }
+    .education h2 {
+        margin-bottom: 40px;
+    }
+}
+@media(max-width:600px){
+    .heading-112 {
+        font-size: 68px;
+        line-height: 78px;
+    }
+    .btn {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 10px 27px;
+    }
+    #menu-icon {
+        font-size: 50px;
+    }
+    .home-contenet h3 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .typing-text span::after {
+        max-height: 48px;
+    }
+    .timeline-item .example .block:first-child,
+    .timeline-item .example .block:last-child {
+        display: none;
+    }    
+    .timeline-item:nth-child(2n+1) .example {
+        > .block {
+            position: absolute;
+            height: 100%;
+            width: 65%;
+            perspective: 1000px;
+        }
+    }
+    .timeline-item:nth-child(2n) .example {
+        > .block {
+            position: absolute;
+            height: 100%;
+            width: 65%;
+            perspective: 1000px;
+        }
+    }
+    .timeline-item .example {
+        padding-top: 100% !important;
+    }
+    #myLinks {
+        top: 98px;
+    }
+    .info {
+        margin: 40px 15px 15px 15px;
+        text-align: right;
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+@media(max-width:550px){
+    .heading-112 {
+        font-size: 66px;
+        line-height: 76px;
+    }
+    .btn {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .logo {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .text-50 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .text-40 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    #menu-icon {
+        font-size: 40px;
+    }
+    #myLinks {
+        top: 87px;
+    }
+    .education h2 {
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:450px){
+    .heading-112 {
+        font-size: 58px;
+        line-height: 68px;
+    }
+    .btn {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .text-50 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+@media(max-width:350px){
+    .heading-112 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+    .btn {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .text-50 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
