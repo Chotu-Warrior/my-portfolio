@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+
+# Node.js (agar frontend use kar raha hai)
+node_modules/
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Build / Dist
+dist/
+build/
