@@ -7,18 +7,6 @@
         document.getElementById("content").style.display = "none"; // Hide content
     }
 window.alert(txt);
-        // Check if the key pressed is Right click (key code 123)
-        document.addEventListener("DOMContentLoaded", function() {
-          document.addEventListener("contextmenu", function(e) {
-              e.preventDefault();
-          });
-      });
-      document.addEventListener("keydown", function(e) {
-          // Check if the key pressed is F12 (key code 123)
-          if (e.key === "F12" || e.keyCode === 123) {
-              e.preventDefault();
-          }
-      }); 
 
 // nav links start //
 const sections = document.querySelectorAll('section');
@@ -26,7 +14,6 @@ const navLinks = document.querySelectorAll('nav a');
 
 sections.forEach((section, index) => {
 section.addEventListener('mouseover', function () {
-console.log(`Hovering over section ${index + 1}`);
 
 if (navLinks[index]) { // Assuming that the order of nav links matches sections
   navLinks[index].classList.add('active');
@@ -50,9 +37,7 @@ if(j< txt.length){
     document.getElementById("typing-animation").innerHTML += txt[j].charAt(i);
     i++;
     setTimeout(typeWriter, speed);
-    console.log(i)
   }else{
-    console.log('thisis else');
     i=0
     j++;
     document.getElementById("typing-animation").innerHTML='';
@@ -60,7 +45,6 @@ if(j< txt.length){
     
   }
 }else{
-    console.log('second else');
     i=0
     j=0;
     document.getElementById("typing-animation").innerHTML='';
