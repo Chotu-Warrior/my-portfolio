@@ -5,60 +5,57 @@ const cors = require('cors');
 const path = require('path');
 const dotenv = require('dotenv');
 
-// Load environment variables
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-// Middleware
+
+// ====================== MIDDLEWARE ======================
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Serve static files from the "public" directory
+// Serve static files (if you have a public folder)
 app.use(express.static(path.resolve(__dirname, 'public')));
 
-// Root Route (Serve contact.html by default)
-// app.get('/', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-//   console.log('Full path:', fullPath);
-// });
-
-// Configure Nodemailer with credentials from environment variables
+// ====================== NODEMAILER SETUP ======================
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'chotuwarrior2@gmail.com', // Replace with your Gmail
-    pass: 'xwdb qhjx rsrm flzt',    // Replace with your App Password
-  },
+    user: 'chotuwarrior2@gmail.com',        // Your Gmail
+    pass: 'xwdb qhjx rsrm flzt'             // Your Gmail App Password
+  }
 });
 
-// Handle Contact Form Submission
+// ====================== ROUTES ======================
+
+// Contact Form Route
 app.post('/send-email', (req, res) => {
   const { name, email, subject, message } = req.body;
+
+  if (!name || !email || !subject || !message) {
+    return res.status(400).json({ message: 'All fields are required' });
+  }
 
   const mailOptions = {
     from: email,
     to: 'harshchouhan4547@gmail.com',
     subject: `New Contact Form Submission: ${subject}`,
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`,
   };
 
-  // Send the email using Nodemailer
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error('Error sending email:', error.message);
+      console.error('Error sending email:', error);
       return res.status(500).json({ message: 'Failed to send message. Please try again.' });
     }
-    console.log('Email sent: ' + info.response);  // Log success message
+
+    console.log('Email sent successfully:', info.response);
     res.status(200).json({ message: 'Message sent successfully!' });
   });
 });
 
-// Start the Server
+// ====================== START SERVER ======================
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running on http://localhost:${PORT}`);
 });
