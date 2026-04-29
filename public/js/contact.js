@@ -18,13 +18,13 @@ document.getElementById('contactForm').addEventListener('submit', async function
   status.style.color = 'blue';
 
   try {
-    const response = await fetch('http://localhost:5000/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ name, email, subject, message }),
-    });
+const response = await fetch('http://localhost:5000/send-email', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ name, email, subject, message }),
+});
 
     // Important: Check if response is ok before trying to parse JSON
     let data;
