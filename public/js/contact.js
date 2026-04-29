@@ -18,27 +18,33 @@ document.getElementById('contactForm').addEventListener('submit', async function
   status.style.color = 'blue';
 
   try {
-    const response = await fetch('http://localhost:5000/send-email', {   // ← Changed to 3000
+    const response = await fetch('http://localhost:5000/send-email', {
       method: 'POST',
-      headers: { 
-        'Content-Type': 'application/json' 
+      headers: {
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({ name, email, subject, message }),
     });
 
-    const data = await response.json();   // ← Get the actual message from backend
+    // Important: Check if response is ok before trying to parse JSON
+    let data;
+    try {
+      data = await response.json();
+    } catch (jsonError) {
+      data = { message: 'Invalid response from server' };
+    }
 
     if (response.ok) {
       status.textContent = data.message || 'Message sent successfully!';
       status.style.color = 'green';
-      
+
       document.getElementById('contactForm').reset();
       document.getElementById('contactForm').hidden = true;
 
       setTimeout(() => {
         document.getElementById('contactForm').hidden = false;
-        status.hidden = true;
         status.textContent = '';
+        status.style.color = '';
       }, 4000);
     } else {
       status.textContent = data.message || 'Failed to send message. Please try again.';
@@ -49,7 +55,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     console.error('Error Name:', error.name);
     console.error('Error Message:', error.message);
 
-    status.textContent = 'Cannot connect to server. Is the backend running on port 3000?';
+    status.textContent = 'Cannot connect to server. Is the backend running on port 5000?';
     status.style.color = 'red';
   }
 });
