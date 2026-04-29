@@ -18,7 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
   status.style.color = 'blue';
 
   try {
-    const response = await fetch('http://localhost:3000/send-email', {   // ← Changed to 3000
+    const response = await fetch('http://localhost:5000/send-email', {   // ← Changed to 3000
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json' 
